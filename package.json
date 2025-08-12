@@ -1,1 +1,23 @@
-
+{
+  "name": "virtual-whiteboard-chat",
+  "version": "1.0.0",
+  "description": "Collaborative whiteboard + chat using Socket.IO",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js",
+    "test": "echo \"Run tests (implement)\" && exit 0"
+  },
+  "author": "Akhilesh",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "socket.io": "^4.8.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
