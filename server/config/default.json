@@ -1,1 +1,7 @@
 
+{
+  "port": 3000,
+  "jwtSecret": "dev-secret-key",
+  "adminSecret": "dev-admin-secret",
+  "storageDir": "../storage"
+}
