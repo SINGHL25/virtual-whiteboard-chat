@@ -1,1 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Virtual Whiteboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="topbar">
+    <input id="room-input" placeholder="room id (e.g. board-1)" />
+    <input id="name-input" placeholder="your name" />
+    <button id="join-btn">Join</button>
+    <button id="clear-btn">Clear</button>
+    <button id="snapshot-btn">Snapshot</button>
+  </div>
+
+  <div class="container">
+    <canvas id="board" width="1000" height="600"></canvas>
+    <aside class="sidebar">
+      <div class="controls">
+        <label>Color: <input type="color" id="color" value="#000000"></label>
+        <label>Width: <input type="range" id="width" min="1" max="30" value="3"></label>
+      </div>
+      <div class="chat">
+        <div id="chat-box"></div>
+        <input id="chat-input" placeholder="message" />
+        <button id="chat-send">Send</button>
+      </div>
+    </aside>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
 
